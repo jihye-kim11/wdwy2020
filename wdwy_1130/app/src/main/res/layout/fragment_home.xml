@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:scrollbars="@null">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/activity_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:text="액티비티"
+                    />
+
+                <Button
+                    android:id="@+id/programmimg_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:text="프로그래밍" />
+
+
+                <Button
+                    android:id="@+id/study_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:text="어학" />
+                <Button
+                    android:id="@+id/photo_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:text="사진/동영상" />
+                <Button
+                    android:id="@+id/art_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:text="미술" />
+                <Button
+                    android:id="@+id/music_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:text="음악" />
+                <Button
+                    android:id="@+id/making_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:text="수공예" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ImageButton
+            android:id="@+id/banner"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:src="@drawable/banner" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  새로운 클래스"
+            android:fontFamily="@font/nanumbarunpenb"
+            android:textSize="20dp"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/main_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="@null"/>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

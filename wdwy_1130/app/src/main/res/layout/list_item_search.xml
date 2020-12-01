@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+
+        <ImageButton
+            android:id="@+id/class_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/white"
+            android:scaleType="centerCrop"
+            android:background="#FFFFFF"/>
+
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/class_name"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="클래스명"
+                android:textSize="23dp" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="강의자명"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:id="@+id/class_time"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="시간"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/class_price"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="가격"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/class_start"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="시작일"
+                android:textSize="18dp"
+                android:textColor="#956EDC"/>
+            <TextView
+                android:id="@+id/class_no"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/class_no2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

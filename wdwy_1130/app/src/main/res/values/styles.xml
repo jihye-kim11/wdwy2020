@@ -1,0 +1,25 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- font 적용-->
+<!--        <item name="android:textViewStyle">@style/customTextViewFontStyle</item>-->
+<!--        <item name="android:buttonStyle">@style/customButtonFontStyle</item>-->
+<!--        <item name="android:editTextStyle">@style/customEditTextFontStyle</item>-->
+<!--        <item name="android:radioButtonStyle">@style/customRadioButtonFontStyle</item>-->
+<!--        <item name="android:checkboxStyle">@style/customCheckboxFontStyle</item>-->
+    </style>
+    <style name="CustomSearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name ="voiceIcon">@drawable/ic_home_black_24dp</item>
+        <item name="searchIcon">@drawable/search</item>
+        <item name="queryBackground">@color/colorAccent</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:inputType">textCapWords</item>
+    </style>
+</resources>

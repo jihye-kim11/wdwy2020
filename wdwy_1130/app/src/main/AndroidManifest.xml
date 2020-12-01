@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wdwy.ftp_connect">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <queries>
+        <package android:name="com.kakao.talk" />
+    </queries>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_main_foreground"
+        android:label="WDWY"
+        android:roundIcon="@mipmap/ic_main_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".details.payfinish">
+        </activity>
+        <activity android:name=".ui.dashboard.SomoimSetB" />
+        <activity android:name=".ui.dashboard.NoticePageTeacher"></activity>
+        <activity android:name=".ui.dashboard.NoticeRead" />
+        <activity android:name=".ui.dashboard.NoticeWrite" />
+        <activity android:name=".ui.home.banner" />
+        <activity android:name=".details.details" />
+        <activity android:name=".details.pay" />
+
+        <activity android:name=".ui.home.category" />
+        <activity android:name=".ui.dashboard.review.review" />
+        <activity android:name=".ui.dashboard.qa_answer.qa_answer" />
+        <activity android:name=".ui.home.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.home.search.search" />
+        <activity
+            android:name=".navaigation"
+            android:label="WDWY">
+
+        </activity>
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".MainActivity3">
+
+            <!--
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".ui.dashboard.UserInfoPage" />
+        <activity android:name=".ui.dashboard.TeacherClass" />
+        <activity android:name=".ui.dashboard.StudentClass" />
+        <activity android:name=".ui.dashboard.NoticePage">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".ui.dashboard.ChatPage" />
+        <activity android:name=".ui.dashboard.SomoimPage" />
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="65d67f843a14a372a0a9a4b48f68d872" />
+
+        <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- Redirect URI: "kakao{NATIVE_APP_KEY}://oauth“ -->
+                <data
+                    android:host="oauth"
+                    android:scheme="kakao65d67f843a14a372a0a9a4b48f68d872" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.dashboard.SettingPage" />
+        <activity android:name=".ui.dashboard.DeveloperPage" />
+    </application>
+
+</manifest>
